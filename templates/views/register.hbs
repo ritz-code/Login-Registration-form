@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+
+<body>
+    <div class="register-container" id="register-container">
+        <div id="register-header">
+            <div class="logo" id="logo"><i class="fas fa-spa fa-5x"></i></div>
+            <h1 class="heading">Register</h1>
+            <h3>Let's get you on board</h3>
+        </div>
+        <form action="/register" method="POST" class="registerform" id="registerformid">
+            <div class="form-control">
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name" autocomplete="off">
+                <small>{{errorMsg1}}</small>
+            </div>
+            <div class="form-control">
+                <input type="email" id="email" name="email" placeholder="Email" autocomplete="off">
+                <small>{{errorMsg2}}</small>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" name="password" placeholder="Password" autocomplete="off">
+                <small>{{errorMsg3}}</small>
+            </div>
+            <input type="submit" value="Register" class="btn" name="">
+        </form>
+        <p class="loginLink">Already have an account? <a href="login">Sign In</a></p>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

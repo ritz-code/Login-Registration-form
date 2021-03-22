@@ -1,0 +1,226 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+        
+:root {
+    --my-color: linear-gradient(to left, #4040e9 30%, #7aa3f0 100%);
+}
+
+html {
+        font-size: 62.5%;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+
+h1, h2, h3, h4, h5 {
+        line-height: 1.2;
+    }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+}
+
+#register-container,
+#login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 65vw);
+   /* border: 2px solid green;*/
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:
+          0 0  3px 2px rgb(255,255,255),
+          0.7em 0.7em 2em rgba(0,0,0,0.9);
+}
+
+#register-container #register-header,
+#login-container #login-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+#register-container #register-header .heading,
+#login-container #login-header .heading {
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+#register-container #logo,
+#login-container #logo {
+    display: flex;
+    color: #5352ed;
+    padding: 1rem;
+}
+
+#register-container h1,
+#register-container h1 {
+    /*display: block;*/
+    font-size: 2rem;
+    padding: 2rem;
+    color: #222;
+}
+
+#register-container h3,
+#login-container h3 { 
+    /*display: block;*/
+    font-size: 1.3rem;
+    color: #444;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#registerformid,
+#loginformid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   /* border: 2px solid orange;*/
+    margin: 2rem;
+    padding: 3rem;
+}
+
+#registerformid .form-control,
+#loginformid .form-control{
+    position: relative;
+    margin-bottom: 1rem;
+    /*border:1px solid grey;*/
+}
+
+/*#registerformid .form-control #password {
+    margin-bottom: 4rem;
+}*/
+
+#registerformid .form-control input,
+#loginformid .form-control input {
+    width: 100%;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(219, 212, 212);
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+#registerformid .form-control input::placeholder,
+#loginformid .form-control input::placeholder{
+    color: rgb(187, 179, 179);
+    font-size: 1em;
+}
+
+#registerformid .form-control small{
+    color: rgb(241, 69, 69);
+    position: absolute;
+    bottom: -10px;
+    left: 12px;
+    visibility: visible;
+    font-size: 0.2rem;
+}
+
+/*#registerformid .form-control .error small {
+    visibility: visible;
+}*/
+
+#registerformid .btn,
+#loginformid .btn  {
+    background-color: #5352ed;
+    padding: 0.75rem;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 1px;
+    border: none;
+}
+
+#registerformid .btn:hover,
+#loginformid .btn:hover {
+    outline: none;
+    bordeR: none;
+    background: linear-gradient(to right, #5352ed, rgb(167, 214, 233));
+    color: #222;
+    cursor: pointer;
+}
+
+#register-container .loginLink,
+#login-container .loginLink {
+    color: #222;
+    font-family: 'Noto Serif', serif;
+    font-size: 1em;
+}
+
+#register-container .loginLink a,
+#login-container .loginLink a{
+    color: #4b4bf0;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 15vw);
+    background-color: #000;
+}
+
+
+#home-container h1{
+    color: transparent;
+    background-image: url("img/trees.jpg");
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    font-size: 15em;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+#home-container p{
+    font-size: 2em;
+    padding: 2rem;
+    color: #fff;
+}
+
+@media(max-width:998px) {
+    #register-container {
+        width: calc(100vw - 10vw);
+    }
+    #login-container {
+        width: calc(100vw - 10vw);
+    }
+    #home-container {
+        width: calc(100vw - 5vw); 
+    }
+    #home-container h1{
+        font-size: 6em;
+        margin: 1rem;
+    }
+    #home-container p{
+        font-size: 1em;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 0.2px;
+    font-size: 1.2em;
+}
